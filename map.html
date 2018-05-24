@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D3DtdQfrZ3njBn3XZsbKgYqT8Ed9hNk4"></script>
+    <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="BMap" style="width: 100vw;height: 100vh;opacity: .6"></div>
+</body>
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+    var map = new BMap.Map("BMap");
+    // 创建地图实例
+    // var point = new BMap.Point(116.331398,39.897445);  // 创建点坐标
+    // map.centerAndZoom(point, 15);
+    // map.addControl(new BMap.NavigationControl());
+    // map.centerAndZoom(city,11);
+    map.centerAndZoom("河北工业大学",17);
+    map.enableScrollWheelZoom(true);
+    $(function(){
+        setTimeout(function(){
+            $(".anchorBL").remove();
+            // $(".anchorBL").remove();
+        },3000);
+        // $(".anchorBL").remove();
+        // $(".anchorBL").remove();
+    });
+</script>
+</html>
