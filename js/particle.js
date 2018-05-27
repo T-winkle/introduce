@@ -8,7 +8,7 @@ var S = {
     document.body.classList.add('body--ready');
 
 
-    S.UI.simulate('河北工业大学|商业网站开发|第十组|作品展示|#countdown 3|#circle||');
+    S.UI.simulate('河北工业大学|商业网站开发|第十组|作品展示|#countdown 3|0||');
 
     S.Drawing.loop(function () {
       S.Shape.render();
