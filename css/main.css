@@ -744,7 +744,9 @@ nav a:hover::before {
 		text-align: center;
 		padding: 50px;
 	}
-
+    .first-content .container-fluid{
+        display: block;
+    }
 	.first-content .author-image img {
 		max-width: 195px;
 		float: none;
@@ -825,7 +827,9 @@ nav a:hover::before {
 	.first-content {
 		padding: 30px 5px;
 	}
-
+    .first-content .container-fluid{
+        display: block;
+    }
 	.first-content .main-btn {
 		display: inline-block;
 		margin-right: 0px;
