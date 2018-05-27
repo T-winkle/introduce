@@ -2,12 +2,20 @@
   50% {
     opacity: 1;
   }
-  
+
   100% {
     opacity: 0;
   }
 }
-
+#canvas{
+    position: absolute;
+    background: #060e1b;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    transform: scale(1,1);
+    transition: transform 1s;
+}
 .seq-preloader {
   background: white;
   visibility: visible;
@@ -320,6 +328,10 @@ nav a:hover::before {
 	text-align: left;
 	padding-top: 13%;
 }
+.first-content .container-fluid{
+    display: flex;
+    align-items: center;
+}
 
 .first-content .author-image img {
 	margin-top: 15px;
@@ -630,7 +642,17 @@ nav a:hover::before {
 .fifth-content #contact {
 	padding: 50px 50px 50px 50px;
 }
-
+.fifth-content:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: -10px;
+}
+.fifth-content .container-fluid{
+    display: inline-block;
+    vertical-align: middle;
+}
 .fifth-content input {
   border-radius: 0px;
   padding-left: 15px;
@@ -658,8 +680,8 @@ nav a:hover::before {
   outline: none;
   border: none;
   box-shadow: none;
-  height: 165px;
-  max-height: 220px;
+  height: 223px;
+  /*max-height: 220px;*/
   width: 100%;
   max-width: 100%;
   margin-bottom: 25px;
